@@ -15,14 +15,15 @@
 				type="radio" name="tab" class="sign-up"><label for="tab-2"
 				class="tab">회원가입</label>
 			<div class="login-form">
+			<form action="/login" method="post">
 				<div class="sign-in-htm">
 					<div class="group">
 						<label for="user" class="label">아이디</label> <input id="user"
-							type="text" class="input">
+							type="text" class="input" name="id">
 					</div>
 					<div class="group">
 						<label for="pass" class="label">비밀번호</label> <input id="pass"
-							type="password" class="input" data-type="password">
+							type="password" class="input" data-type="password" name="password">
 					</div>
 					<div class="group">
 						<input id="check" type="checkbox" class="check" checked> <label
@@ -36,6 +37,7 @@
 						<a href="#forgot">비밀번호를 잊어버리셨나요?</a>
 					</div>
 				</div>
+				</form>
 				<div class="sign-up-htm">
 					<div class="group">
 						<label for="user" class="label">아이디</label> <input id="user"
