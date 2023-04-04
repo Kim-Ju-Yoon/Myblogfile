@@ -38,22 +38,23 @@
 					</div>
 				</div>
 				</form>
+				<form action="/member" method="post">
 				<div class="sign-up-htm">
 					<div class="group">
 						<label for="user" class="label">아이디</label> <input id="user"
-							type="text" class="input">
+							type="text" class="input" name="id">
 					</div>
 					<div class="group">
 						<label for="pass" class="label">비밀번호</label> <input id="pass"
-							type="password" class="input" data-type="password">
+							type="password" class="input" data-type="password" name="password">
 					</div>
 					<div class="group">
-						<label for="pass" class="label">비밀번호 확인</label> <input
-							id="pass" type="password" class="input" data-type="password">
+						<label for="pass" class="label">휴대폰 번호</label> <input
+							id="pass" type="text" class="input" name="phone">
 					</div>
 					<div class="group">
 						<label for="pass" class="label">이메일 주소</label> <input
-							id="pass" type="text" class="input">
+							id="pass" type="text" class="input" name="email">
 					</div>
 					<div class="group">
 						<input type="submit" class="button" value="회원가입">
@@ -63,6 +64,7 @@
 						<label for="tab-1">이미 회원가입하셨습니까?</a>
 					</div>
 				</div>
+				</form>
 			</div>
 		</div>
 	</div>

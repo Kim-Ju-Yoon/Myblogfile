@@ -17,5 +17,9 @@ public class LoginServicelmpl implements LoginService {
 		System.out.println("service return="+lm.login(member));
 		return lm.login(member);
 	}
+	
+	public void memreg(LoginVO member) {
+		lm.memreg(member);
+	}
 
 }

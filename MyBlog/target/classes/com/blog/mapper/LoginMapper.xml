@@ -12,4 +12,9 @@
 		where id=#{id} and password=#{password}
 	</select>
 	
+	<insert id="memreg">
+		insert into member (id,password,phone,email)
+		values(#{id},#{password},#{phone},#{email});
+	</insert>
+	
 </mapper>
