@@ -6,10 +6,10 @@
 
 <mapper namespace="com.blog.mapper.BoardMapper">
 
-	<select id="login" resultType="com.blog.model.BoardVO">
-		select id, password
-		from member
-		where id=#{id} and password=#{password}
+	<select id="list" resultType="com.blog.model.BoardVO">
+		select uid,title,id,count,regdate from board order by uid desc
 	</select>
+	
+	
 	
 </mapper>
