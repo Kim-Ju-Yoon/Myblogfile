@@ -17,4 +17,9 @@ public class BoardServicelmpl implements BoardService {
 	public ArrayList<BoardVO> list() {
 		return bm.list();
 	}
+	
+	// 게시판 상세 내용
+	public BoardVO detail(BoardVO board) {
+		return bm.detail(board);
+	}
 }

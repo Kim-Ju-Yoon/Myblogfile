@@ -11,8 +11,8 @@
 <body>
 	<div class="board_wrap">
 		<div class="board_title">
-			<strong>공지사항</strong>
-			<p>공지사항을 빠르고 정확하게 알려드립니다.</p>
+			<strong>자유게시판</strong>
+			<p>자유게시판을 빠르고 정확하게 알려드립니다.</p>
 		</div>
 		<!-- board seach area -->
 		<div id="board-search">
@@ -42,7 +42,7 @@
 				<div>
 					<div class="num">${boardlist.uid}</div>
 					<div class="title">
-						<a href="#">${boardlist.title}</a>
+						<a href="/BoardDetail?uid=${boardlist.uid}">${boardlist.title}</a>
 					</div>
 					<div class="writer">${boardlist.id}</div>
 					<div class="date">${boardlist.regdate}</div>

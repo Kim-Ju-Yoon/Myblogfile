@@ -10,6 +10,10 @@
 		select uid,title,id,count,regdate from board order by uid desc
 	</select>
 	
+	<select id="detail" resultType="com.blog.model.BoardVO">
+  			select * from board
+  			where uid=#{uid}
+  		</select>
 	
 	
 </mapper>

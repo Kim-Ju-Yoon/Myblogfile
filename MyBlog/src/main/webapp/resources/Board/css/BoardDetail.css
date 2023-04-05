@@ -1,0 +1,29 @@
+.TextBox {
+    border-top: 3px solid black;
+}
+
+th {
+    background-color: lightgray;
+    width: 100px;
+    height: 40px;
+}
+
+td {
+    width: 500px;
+    height: 40px;
+}
+
+#title {
+    width: 500px;
+    height: 30px;
+}
+
+#contents {
+    width: 700px;
+    height: 400px;
+}
+
+.BT{
+    width: 100px;
+    height: 50px;
+}

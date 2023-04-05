@@ -8,4 +8,6 @@ import com.blog.model.BoardVO;
 public interface BoardMapper {
 
 	public ArrayList<BoardVO> list();
+	
+	public BoardVO detail(BoardVO board);
 }
