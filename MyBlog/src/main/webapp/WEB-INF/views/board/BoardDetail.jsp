@@ -32,23 +32,26 @@
 				<th>작성일</th>
 				<td>${detail.regdate}</td>
 			</tr>
+			<form method="post">
 			<div>
 				<tr>
 					<th scope="row">제목</th>
 					<td colspan="3">
 						<input type="text" id="title" name="title" value="${detail.title}" />
+						<input type="hidden" value="${detail.uid}" name="uid">
 					</td>
 				</tr>
 				<tr>
 					<td colspan="4" class="view_text">
-						<textarea title="내용" id="contents" name="contents">${detail.content}</textarea>
+						<textarea title="내용" id="contents" name="content">${detail.content}</textarea>
 					</td>
 				</tr>
 				<tr>
-					<td><input type="submit" value="수정" class="BT" formaction="/board/modify"></td>
-					<td><input type="submit" value="삭제" class="BT" formaction="/board/remove"></td>
+					<td><input type="submit" value="수정" class="BT" formaction="/modify"></td>
+					<td><input type="submit" value="삭제" class="BT" formaction="/remove"></td>
 				</tr>
 			</div>
+			</form>
 		</table>
 	</div>
 </body>

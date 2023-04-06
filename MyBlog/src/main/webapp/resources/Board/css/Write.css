@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html{
+    font-size: 10px;
+  }
+
+  .board_write {  /* �Խ��� ��� ���� */
+    width: 1000px;
+    margin: 100px auto;
+  }
+
+  .items {
+    margin-bottom: 10px;
+    height: 30px;
+  }
+
+
+  #utitle::placeholder{
+    font-size: 2.5rem;
+  }
+
+  form div #utitle{
+    width: 100%;
+    height: 40px;
+    font-size: 2rem;
+    border-bottom: 3px solid lightgray ;
+  }
+
+  #ucontent::placeholder{
+    font-size: 2rem;
+  }
+
+  form div #ucontent{
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .bt_se{
+    margin-top: 50px;
+    float: right;
+  }
+
+  .bt_se button {
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    border: 0.5px solid #e0e0e0;
+    background-color: #e0e0e0;
+    transition-property: background-color font-size font-weight;
+    transition-duration: 0.3s;
+  }
+
+  .bt_se button:hover{
+    background-color: #bdbdbd;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .file{
+    border-bottom: 1px solid #ddd;
+  }

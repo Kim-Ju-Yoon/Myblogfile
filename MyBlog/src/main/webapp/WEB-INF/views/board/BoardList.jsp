@@ -18,11 +18,15 @@
 		<div id="board-search">
 			<div class="container">
 				<div class="search-window">
-					<form action="board/BoardList">
+					<form action="BoardList">
 						<div class="search-wrap">
-							<label for="search" class="blind">게시판 내용 검색</label> <input
-								id="search" type="search" name="keyword"
-								placeholder="검색어를 입력해주세요." value="">
+							<select name="type">
+								<option value="T">제목</option>
+								<option value="C">내용</option>
+								<option value="TC">제목+게시글</option>
+							</select> <input type="text" name="keyword" value="${paging.cri.keyword}">
+							<input type="hidden" name="pageNum" value="${paging.cri.pageNum}">
+							<input type="hidden" name="amount" value="${paging.cri.amount}">
 							<button type="submit" class="btn btn-dark">검색</button>
 						</div>
 					</form>
@@ -39,26 +43,37 @@
 					<div class="count">조회</div>
 				</div>
 				<c:forEach items="${list}" var="boardlist">
-				<div>
-					<div class="num">${boardlist.uid}</div>
-					<div class="title">
-						<a href="/BoardDetail?uid=${boardlist.uid}">${boardlist.title}</a>
+					<div>
+						<div class="num">${boardlist.uid}</div>
+						<div class="title">
+							<a href="/BoardDetail?uid=${boardlist.uid}">${boardlist.title}</a>
+						</div>
+						<div class="writer">${boardlist.id}</div>
+						<div class="date">${boardlist.regdate}</div>
+						<div class="count">${boardlist.count}</div>
 					</div>
-					<div class="writer">${boardlist.id}</div>
-					<div class="date">${boardlist.regdate}</div>
-					<div class="count">${boardlist.count}</div>
-				</div>
 				</c:forEach>
 			</div>
 			<div class="board_page"></div>
 			<div class="board_page">
-				<a href="#" class="bt prev">이전</a> <a href="#" class="num on">1</a>
-				<a href="#" class="num">2</a> <a href="#" class="num">3</a> <a
-					href="#" class="num">4</a> <a href="#" class="num">5</a> <a
-					href="#" class="bt next">다음</a>
+				<c:if test="${paging.prev}">
+					<a
+						href="/BoardList?type=${paging.cri.type}&keyword=${paging.cri.keyword}&pageNum=${paging.startPage-1}&amount=${paging.cri.amount}"
+						class="bt prev">이전</a>
+				</c:if>
+
+				<c:forEach begin="${paging.startPage}" end="${paging.endPage}"
+					var="num">
+					<a href="/BoardList?type=${paging.cri.type}&keyword=${paging.cri.keyword}&pageNum=${num}&amount=${paging.cri.amount}" class="num on">${num}</a>
+				</c:forEach>
+				<c:if test="${paging.next}">
+					<a
+						href="/BoardList?type=${paging.cri.type}&keyword=${paging.cri.keyword}&pageNum=${paging.endPage+1}&amount=${paging.cri.amount}"
+						class="bt next">다음</a>
+				</c:if>
 			</div>
 			<div class="bt_wrap">
-				<a href="/html/게시판글작성.html" class="on">등록</a>
+				<a href="/Write" class="on">등록</a>
 				<!--<a href="#">수정</a> -->
 			</div>
 		</div>

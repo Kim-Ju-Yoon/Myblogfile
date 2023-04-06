@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.blog.model.BoardVO;
+import com.blog.model.CriteriaVO;
+import com.blog.model.PageVO;
 import com.blog.service.BoardService;
 
 @Controller
@@ -16,8 +18,10 @@ public class BoardController {
 
 	// 게시판 리스트
 	@RequestMapping(value = "/BoardList", method = RequestMethod.GET)
-	public String BoardList(Model model) {
-		model.addAttribute("list", bs.list());
+	public String BoardList(Model model,CriteriaVO cri) {
+		model.addAttribute("list", bs.list(cri));
+		int total=bs.total(cri);
+		model.addAttribute("paging", new PageVO(cri, total));
 		return "board/BoardList";
 	}
 	
@@ -29,4 +33,30 @@ public class BoardController {
 		return "board/BoardDetail";
 	}
 	
+	// 게시판 글쓰기 페이지(화면이동)
+	@RequestMapping(value = "/Write", method = RequestMethod.GET)
+	public String BoardWrite() {
+		return "board/Write";
+	}
+	
+	// 게시판 글쓰기 페이지(기능구현)
+	@RequestMapping(value = "/Write", method = RequestMethod.POST)
+	public String WritePost(BoardVO board) {
+		bs.write(board);
+		return "redirect:/BoardList";
+	}
+	
+	// 게시판 삭제 기능
+	@RequestMapping(value = "/remove", method = RequestMethod.POST)
+	public String remove (BoardVO board) {
+		bs.remove(board);
+		return "redirect:/BoardList";
+	}
+	
+	// 게시판 수정기능
+	@RequestMapping(value = "/modify", method = RequestMethod.POST)
+	public String modify (BoardVO board) {
+		bs.modify(board);
+		return "redirect:/BoardList";
+	}
 }

@@ -112,10 +112,6 @@
                 </ul>
               </div>
             </div>
-            <p>
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-            </p>
           </div>
         </div>
 
@@ -129,7 +125,7 @@
 
         <div class="section-title">
           <h2>Skills</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>현재 공부하고 있는 기술 스택입니다. 100%를 위해 노력하고 있습니다.</p>
         </div>
 
         <div class="row skills-content">
@@ -195,58 +191,57 @@
 
         <div class="section-title">
           <h2>Resume</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-6">
             <h3 class="resume-title">Sumary</h3>
             <div class="resume-item pb-0">
-              <h4>Brandon Johnson</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+              <h4>Kim Ju Yoon</h4>
+              <p><em>사용자 경험을 반영한 프론트와, 꼼꼼하고 유지보수가 좋은 품질의 백엔드를 만들어내고 싶은 개발자입니다. </em></p>
               <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
+                <li>울산광역시 울주군 삼납읍 작괘들길41 경동우신아파트</li>
+                <li>010-3212-5841</li>
+                <li>kj5841@naver.com</li>
               </ul>
             </div>
 
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+              <h4>경남정보대학 기계과 전공 (설계부문)</h4>
+              <h5>2016 - 2021</h5>
+              <p><em>부산광역시 주례</em></p>
+              <p>개발자와 상관이 없는 과를 전공하였지만 개발자와 같이 프로그램과 제품을 만들기 위해 설계를 하는 과정에서의 경험은 비슷할 것이라 생각됩니다.
+              개발자도 자기가 만들 코드의 설계를 미리 해야된다고 생각하기 때문입니다.</p>
             </div>
             <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+              <h4>국비지원 교육</h4>
+              <h5>2023.02 - 2023.07</h5>
+              <p><em>울산광역시 삼산동</em></p>
+              <p>총 6개월 간의 개발 지식을 들었으며,이를 통해 더욱 더 정진해 나갈수 있는 발판이 되었다고 생각합니다.
+              또한, 학원교육만이 아닌 추가 개발 공부를 독학중에 있습니다.</p>
             </div>
           </div>
           <div class="col-lg-6">
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
+              <h4>Team Project</h4>
+              <h5>국비지원 교육 중</h5>
               <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+                <li>팀프로젝트를 통해 깃을 사용한 협업을 경험</li>
+                <li>팀프로젝트를 통해 다양한 동료들과의 협업경험</li>
+                <li>팀프로젝트를 통해 처음부터 새로운 코드를 만들어본 경험</li>
+                <li>팀프로젝트를 통해 여러가지 라이브러리와 프레임워크를 경험</li>
               </ul>
             </div>
             <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
+              <h4>문서작성 자격증 보유</h4>
+              <p><em>개발자는 개발만 하는 것이 아니라 자신의 의견을 표출할 수 있어야 된다고 생각하기에 적어둠</em></p>
               <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+                <li>ITQ한글(A)</li>
+                <li>ITQ파워포인트(B)</li>
+                <li>DIAT워드프로세서(고급)</li>
+                <li>DIAT프리젠테이션(고급)</li>
               </ul>
             </div>
           </div>
@@ -261,16 +256,16 @@
 
         <div class="section-title">
           <h2>Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>개발자가 되기 위해 만든 프로젝트를 소개합니다.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-app">백엔드</li>
+              <li data-filter=".filter-card">프론트엔드</li>
+              <li data-filter=".filter-web">웹사이트</li>
             </ul>
           </div>
         </div>
@@ -281,8 +276,8 @@
             <div class="portfolio-wrap">
               <img src="resources/img/portfolio/BoardList.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
+                <h4>게시판</h4>
+                <p>게시판 기능구현</p>
                 <div class="portfolio-links">
                   <a href="resources/img/portfolio/BoardList.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
                   <a href="/BoardList" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
@@ -600,19 +595,19 @@
               <div class="address">
                 <i class='bx bx-current-location' ></i>
                 <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>울산광역시 울주군 삼납음 작괘들길 41 경동우신아파트116동1201호</p>
               </div>
 
               <div class="email">
                 <i class='bx bx-envelope' ></i>
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+                <p>kj5841@naver.com</p>
               </div>
 
               <div class="phone">
                <i class='bx bx-phone' ></i>
                 <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <p>010-3212-5841</p>
               </div>
 
             </div>
