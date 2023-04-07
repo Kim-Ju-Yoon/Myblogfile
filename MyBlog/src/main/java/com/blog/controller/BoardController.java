@@ -1,5 +1,7 @@
 package com.blog.controller;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -35,7 +37,8 @@ public class BoardController {
 	
 	// 게시판 글쓰기 페이지(화면이동)
 	@RequestMapping(value = "/Write", method = RequestMethod.GET)
-	public String BoardWrite() {
+	public String BoardWrite(HttpSession session) {
+		session.getAttribute("login");
 		return "board/Write";
 	}
 	

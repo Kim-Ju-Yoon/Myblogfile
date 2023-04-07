@@ -5,7 +5,7 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.blog.mapper.BoardMapper">
-<!-- 게시글 리스트 불러오기 및 정렬 -->
+	<!-- 게시글 리스트 불러오기 및 정렬 -->
 	<select id="list" resultType="com.blog.model.BoardVO">
 		select *
 		from(
@@ -41,7 +41,14 @@
 		where
 		uid=#{uid}
 	</select>
-<!-- 게시글 갯수 -->
+
+	<update id="countup">
+		update board
+		set count = count + 1
+		where uid = #{uid}
+	</update>
+
+	<!-- 게시글 갯수 -->
 	<select id="total" resultType="int">
 		select count(*) from board
 		<if test="keyword != null">
@@ -64,25 +71,25 @@
 
 		</if>
 	</select>
-<!-- 글쓰기 -->
+	<!-- 글쓰기 -->
 	<insert id="write">
 		<selectKey keyProperty="uid" order="BEFORE" resultType="int">
 			select max(uid)+1 uid
 			from board
 		</selectKey>
 
-		insert into board(uid,title, content,regdate)
+		insert into board(uid,title, content,regdate,id)
 		values(#{uid},#{title},
-		#{content},sysdate())
+		#{content},sysdate(),#{id})
 	</insert>
-	
-<!-- 글삭제 -->
+
+	<!-- 글삭제 -->
 	<delete id="remove">
 		delete from board
 		where uid=#{uid}
 	</delete>
-	
-<!-- 글수정 -->
+
+	<!-- 글수정 -->
 	<update id="modify">
 		update board
 		set title=#{title}, content=#{content}

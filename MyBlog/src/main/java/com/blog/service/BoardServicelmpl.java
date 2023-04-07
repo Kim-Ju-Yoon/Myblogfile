@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.blog.mapper.BoardMapper;
 import com.blog.model.BoardVO;
@@ -20,7 +21,9 @@ public class BoardServicelmpl implements BoardService {
 	}
 	
 	// 게시판 상세 내용
+	@Transactional
 	public BoardVO detail(BoardVO board) {
+		bm.countup(board);
 		return bm.detail(board);
 	}
 	

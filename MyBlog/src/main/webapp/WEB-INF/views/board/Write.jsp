@@ -19,6 +19,7 @@
                 <form action="/Write" method="post">
                     <div class="in_title">
                         <textarea name="title" id="utitle" rows="1" cols="55" placeholder="제목을 입력하세요" maxlength="100" ></textarea>
+                        <input type="hidden" value="${login.id}" name="id">
                     </div>
  
                     <div class="wi_line"></div>

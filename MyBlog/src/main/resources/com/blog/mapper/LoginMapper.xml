@@ -13,8 +13,8 @@
 	</select>
 	
 	<insert id="memreg">
-		insert into member (id,password,phone,email)
-		values(#{id},#{password},#{phone},#{email});
+		insert into member (id,password,phone,email,name)
+		values(#{id},#{password},#{phone},#{email},#{name});
 	</insert>
 	
 </mapper>

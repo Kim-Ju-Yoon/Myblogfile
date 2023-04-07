@@ -49,6 +49,10 @@
 							type="password" class="input" data-type="password" name="password">
 					</div>
 					<div class="group">
+						<label for="pass" class="label">이름</label> <input
+							id="pass" type="text" class="input" name="name">
+					</div>
+					<div class="group">
 						<label for="pass" class="label">휴대폰 번호</label> <input
 							id="pass" type="text" class="input" name="phone">
 					</div>
