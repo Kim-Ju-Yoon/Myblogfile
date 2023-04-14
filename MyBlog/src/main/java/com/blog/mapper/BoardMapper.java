@@ -21,4 +21,6 @@ public interface BoardMapper {
 	public void modify(BoardVO board);
 	
 	public void countup(BoardVO board);
+	
+
 }

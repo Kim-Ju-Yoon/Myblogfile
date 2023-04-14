@@ -47,4 +47,5 @@ public class BoardServicelmpl implements BoardService {
 		bm.modify(board);
 	}
 	
+	
 }

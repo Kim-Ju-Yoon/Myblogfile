@@ -62,4 +62,7 @@ public class BoardController {
 		bs.modify(board);
 		return "redirect:/BoardList";
 	}
+	
+	
 }
+

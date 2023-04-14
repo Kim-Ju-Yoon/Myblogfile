@@ -24,4 +24,5 @@ public interface BoardService {
 	// 글수정
 	public void modify(BoardVO board);
 	
+	
 }
