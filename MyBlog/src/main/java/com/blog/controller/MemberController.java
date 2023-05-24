@@ -20,7 +20,6 @@ public class MemberController {
 	// 메인 페이지
 		@RequestMapping(value = "/MainHome", method = RequestMethod.GET)
 		public String login () {
-			System.out.println("aaaa");
 			return "MainHome";
 		}
 
