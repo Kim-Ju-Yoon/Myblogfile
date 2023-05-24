@@ -1,42 +1,42 @@
 /**
- *  ëŒ“ê¸€ ê´€ë ¨ javascript ì²˜ë¦¬
+ *  ´ñ±Û °ü·Ã javascript Ã³¸®
  */
 
-$(document).ready(function(){	// jquery ì¤€ë¹„...
-	// í•¨ìˆ˜ í˜¸ì¶œ
-	// detail.jspê°€ ì‹œì‘ë˜ìë§ˆì bnoê°’ì„ ê°€ì ¸ì˜¬ë ¤ë©´ $(document).ready ì•„ë˜ì— ì„ ì–¸
+$(document).ready(function(){	// jquery ÁØºñ...
+	// ÇÔ¼ö È£Ãâ
+	// detail.jsp°¡ ½ÃÀÛµÇÀÚ¸¶ÀÚ bno°ªÀ» °¡Á®¿Ã·Á¸é $(document).ready ¾Æ·¡¿¡ ¼±¾ğ
 	var uidValue=$("input[name='uid']").val();
 	var pageValue=1;
-	// detail.jspê°€ ì‹œì‘ë˜ìë§ˆì ëŒ“ê¸€ëª©ë¡ë¦¬ìŠ¤íŠ¸(list) í•¨ìˆ˜ë¥¼ í˜¸ì¶œ
+	// detail.jsp°¡ ½ÃÀÛµÇÀÚ¸¶ÀÚ ´ñ±Û¸ñ·Ï¸®½ºÆ®(list) ÇÔ¼ö¸¦ È£Ãâ
 	list({uid:uidValue,page:pageValue});
 	
-	// ëŒ“ê¸€ ì“°ê¸°ë²„íŠ¼ì„ í´ë¦­í•˜ë©´ 
+	// ´ñ±Û ¾²±â¹öÆ°À» Å¬¸¯ÇÏ¸é 
 	$("#add").on("click",function(){
-		// ëŒ“ê¸€ì“°ê¸° ë²„íŠ¼ì„ í´ë¦­í–ˆì„ ë‹¹ì‹œì— ëŒ“ê¸€ë‚´ìš©ì„ ê°€ì ¸ì˜¬ë ¤ë©´ $("#add").on("click",function(){ ì•„ë˜ì— ì„ ì–¸
+		// ´ñ±Û¾²±â ¹öÆ°À» Å¬¸¯ÇßÀ» ´ç½Ã¿¡ ´ñ±Û³»¿ëÀ» °¡Á®¿Ã·Á¸é $("#add").on("click",function(){ ¾Æ·¡¿¡ ¼±¾ğ
 		var replyValue=$("#reply").val();
 		var idValue="abcd1";
-		// ëŒ“ê¸€ì“°ê¸°ë¥¼ í•˜ê¸° ìœ„í•œ í•¨ìˆ˜ í˜¸ì¶œ
+		// ´ñ±Û¾²±â¸¦ ÇÏ±â À§ÇÑ ÇÔ¼ö È£Ãâ
 		add({uid:uidValue,reply:replyValue,id:idValue});
 	})
-	// ëŒ“ê¸€ ìˆ˜ì •ë²„íŠ¼ì„ í´ë¦­í•˜ë©´
-	// ì´ë¯¸ ì¡´ì¬í•˜ëŠ” íƒœê·¸ì— ì´ë²¤íŠ¸ë¥¼ ì²˜ë¦¬í•˜ê³ 
-	// ë‚˜ì¤‘ì— ë™ì ìœ¼ë¡œ ìƒê¸°ëŠ” íƒœê·¸ë“¤ì— ëŒ€í•´ì„œ íŒŒë¼ë¯¸í„° í˜•ì‹ìœ¼ë¡œ ì§€ì •(ì´ë²¤íŠ¸ ë¸ë¦¬ê²Œì´íŠ¸)
+	// ´ñ±Û ¼öÁ¤¹öÆ°À» Å¬¸¯ÇÏ¸é
+	// ÀÌ¹Ì Á¸ÀçÇÏ´Â ÅÂ±×¿¡ ÀÌº¥Æ®¸¦ Ã³¸®ÇÏ°í
+	// ³ªÁß¿¡ µ¿ÀûÀ¸·Î »ı±â´Â ÅÂ±×µé¿¡ ´ëÇØ¼­ ÆÄ¶ó¹ÌÅÍ Çü½ÄÀ¸·Î ÁöÁ¤(ÀÌº¥Æ® µ¨¸®°ÔÀÌÆ®)
 	$("#chat").on("click",".update",function(){
-		// ëŒ“ê¸€ë²ˆí˜¸ì™€ ëŒ“ê¸€ë‚´ìš©ì„ ìˆ˜ì§‘í•´ì„œ 
+		// ´ñ±Û¹øÈ£¿Í ´ñ±Û³»¿ëÀ» ¼öÁıÇØ¼­ 
 		var rno=$(this).data("rno");
 		var reply=$("#replycontent"+rno).val();
 		
 		
-		// ëŒ“ê¸€ìˆ˜ì •ë¥¼ í•˜ê¸° ìœ„í•œ í•¨ìˆ˜ í˜¸ì¶œ(ëŒ“ê¸€ë²ˆí˜¸, ëŒ“ê¸€ë‚´ìš©)
+		// ´ñ±Û¼öÁ¤¸¦ ÇÏ±â À§ÇÑ ÇÔ¼ö È£Ãâ(´ñ±Û¹øÈ£, ´ñ±Û³»¿ë)
 		modify({rno:rno,reply:reply});
 	})
 	
-	// ëŒ“ê¸€ ì‚­ì œë²„íŠ¼ì„ í´ë¦­í•˜ë©´
+	// ´ñ±Û »èÁ¦¹öÆ°À» Å¬¸¯ÇÏ¸é
 	$("#chat").on("click",".remove",function(){
-		// ëŒ“ê¸€ë²ˆí˜¸ì„ ìˆ˜ì§‘í•´ì„œ
+		// ´ñ±Û¹øÈ£À» ¼öÁıÇØ¼­
 		var rno=$(this).data("rno");
 		alert(uidValue)
-		// ëŒ“ê¸€ì‚­ì œë¥¼ í•˜ê¸° ìœ„í•œ í•¨ìˆ˜ í˜¸ì¶œ(ëŒ“ê¸€ë²ˆí˜¸)
+		// ´ñ±Û»èÁ¦¸¦ ÇÏ±â À§ÇÑ ÇÔ¼ö È£Ãâ(´ñ±Û¹øÈ£)
 		remove({rno:rno,uid:uidValue})
 		//remove(rno)
 		
@@ -52,9 +52,9 @@ $(document).ready(function(){	// jquery ì¤€ë¹„...
 	})
 
 
-})	// jquery ë...
-// í•¨ìˆ˜ ì„ ì–¸
-// ëŒ“ê¸€ ì‚­ì œë¥¼ í•˜ê¸° ìœ„í•œ í•¨ìˆ˜ ì„ ì–¸
+})	// jquery ³¡...
+// ÇÔ¼ö ¼±¾ğ
+// ´ñ±Û »èÁ¦¸¦ ÇÏ±â À§ÇÑ ÇÔ¼ö ¼±¾ğ
 function remove(reply){
 	console.log(reply);
 	$.ajax({
@@ -64,7 +64,7 @@ function remove(reply){
 		contentType:"application/json; charset=utf-8",
 		success:function(result){
 			if(result=="success"){
-				alert("ëŒ“ê¸€ì‚­ì œ ì„±ê³µ")
+				alert("´ñ±Û»èÁ¦ ¼º°ø")
 				list(reply.uid)
 			}
 		}
@@ -72,24 +72,24 @@ function remove(reply){
 }
 
 
-// ëŒ“ê¸€ ìˆ˜ì •ì„ í•˜ê¸° ìœ„í•œ í•¨ìˆ˜ ì„ ì–¸
+// ´ñ±Û ¼öÁ¤À» ÇÏ±â À§ÇÑ ÇÔ¼ö ¼±¾ğ
 function modify(reply){
 	console.log(reply);
 	$.ajax({
-		type:"put",	// methodë°©ì‹(get, post, put, delete)
+		type:"put",	// method¹æ½Ä(get, post, put, delete)
 		url:"/replies/modify",
 		data:JSON.stringify(reply),
-		// contentType : ajax -> controllerë¡œ ë°ì´í„° ì „ì†¡ ì‹œ íƒ€ì…
-		// (contentTypeì„ ìƒëµí•˜ë©´ web Browerí•œí…Œ ìœ„ì„)
+		// contentType : ajax -> controller·Î µ¥ÀÌÅÍ Àü¼Û ½Ã Å¸ÀÔ
+		// (contentTypeÀ» »ı·«ÇÏ¸é web BrowerÇÑÅ× À§ÀÓ)
 		contentType:"application/json; charset=utf-8",
 		success:function(result){
 			if(result=="success"){
-				alert("ëŒ“ê¸€ìˆ˜ì • ì„±ê³µ")
+				alert("´ñ±Û¼öÁ¤ ¼º°ø")
 			}
 		}
 	})
 }
-function list(param){// listí•¨ìˆ˜ ì„ ì–¸ ì‹œì‘
+function list(param){// listÇÔ¼ö ¼±¾ğ ½ÃÀÛ
 	//alert(bno);
 	var uid = param.uid;
 	var page = param.page;
@@ -107,8 +107,8 @@ function list(param){// listí•¨ìˆ˜ ì„ ì–¸ ì‹œì‘
 			str+="<li>"+data.list[i].id+"</li>"
 			str+="<li><textarea id='replycontent"+data.list[i].rno+"'>"+data.list[i].reply+"</textarea></li>"
 			str+="<li>"
-			str+="<input class='update' type='button' value='ìˆ˜ì •' data-rno="+data.list[i].rno+">"
-			str+="<input class='remove' type='button' value='ì‚­ì œ' data-rno="+data.list[i].rno+">"
+			str+="<input class='update' type='button' value='¼öÁ¤' data-rno="+data.list[i].rno+">"
+			str+="<input class='remove' type='button' value='»èÁ¦' data-rno="+data.list[i].rno+">"
 			str+="</li>"
 		}
 		
@@ -116,7 +116,7 @@ function list(param){// listí•¨ìˆ˜ ì„ ì–¸ ì‹œì‘
 		
 		showReplyPage(data.replycnt,page);
 	});
-}// listí•¨ìˆ˜ ì„ ì–¸ ë
+}// listÇÔ¼ö ¼±¾ğ ³¡
 //var pageNum = 1;
 function showReplyPage(replycnt,pageNum){
 	
@@ -154,21 +154,21 @@ function showReplyPage(replycnt,pageNum){
 		
 }
 
-// ëŒ“ê¸€ ì“°ê¸°ë¥¼ í•˜ê¸° ìœ„í•œ í•¨ìˆ˜ ì„ ì–¸
-function add(reply){	// addí•¨ìˆ˜ ì„ ì–¸ ì‹œì‘
+// ´ñ±Û ¾²±â¸¦ ÇÏ±â À§ÇÑ ÇÔ¼ö ¼±¾ğ
+function add(reply){	// addÇÔ¼ö ¼±¾ğ ½ÃÀÛ
 	console.log(reply);
 	$.ajax({
-		type:"post",	// methodë°©ì‹(get, post, put, delete)
+		type:"post",	// method¹æ½Ä(get, post, put, delete)
 		url:"/replies/new",
 		data:JSON.stringify(reply),
-		// contentType : ajax -> controllerë¡œ ë°ì´í„° ì „ì†¡ ì‹œ íƒ€ì…
-		// (contentTypeì„ ìƒëµí•˜ë©´ web Browerí•œí…Œ ìœ„ì„)
+		// contentType : ajax -> controller·Î µ¥ÀÌÅÍ Àü¼Û ½Ã Å¸ÀÔ
+		// (contentTypeÀ» »ı·«ÇÏ¸é web BrowerÇÑÅ× À§ÀÓ)
 		contentType:"application/json; charset=utf-8",
 		success:function(result){
 			if(result=="success"){
-				alert("ëŒ“ê¸€ì“°ê¸° ì„±ê³µ")
+				alert("´ñ±Û¾²±â ¼º°ø")
 				list(reply.uid)
 			}
 		}
 	})
-}	// addí•¨ìˆ˜ ì„ ì–¸ ë
+}	// addÇÔ¼ö ¼±¾ğ ³¡
