@@ -197,24 +197,58 @@
 			</div>
 			<!-- About Section Content-->
 			<div class="row">
-				<div class="col-lg-4 ms-auto">
-					<p class="lead">Freelancer is a free bootstrap theme created by
-						Start Bootstrap. The download includes the complete source files
-						including HTML, CSS, and JavaScript as well as optional SASS
-						stylesheets for easy customization.</p>
+				<div id="carouselExampleIndicators" class="carousel slide"
+					data-bs-ride="carousel">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="0" class="active" aria-current="true"
+							aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="2" aria-label="Slide 3"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="3" aria-label="Slide 4"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="4" aria-label="Slide 5"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="5" aria-label="Slide 6"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="resources/img/html_css_js1.png" class="d-block w-200"
+								alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="resources/img/Java2.png" class="d-block w-200"
+								alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="resources/img/React1.png" class="d-block w-200"
+								alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="resources/img/git2.png" class="d-block w-200" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="resources/img/jsp1.png" class="d-block w-200" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="resources/img/Spring1.png" class="d-block w-200"
+								alt="...">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button"
+						data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button"
+						data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
 				</div>
-				<div class="col-lg-4 me-auto">
-					<p class="lead">You can create your own custom avatar for the
-						masthead, change the icon in the dividers, and add your email
-						address to the contact form to make it fully functional!</p>
-				</div>
-			</div>
-			<!-- About Section Button-->
-			<div class="text-center mt-4">
-				<a class="btn btn-xl btn-outline-light"
-					href="https://startbootstrap.com/theme/freelancer/"> <i
-					class="fas fa-download me-2"></i> Free Download!
-				</a>
 			</div>
 		</div>
 	</section>
@@ -313,10 +347,8 @@
 			<div class="row">
 				<!-- Footer Location-->
 				<div class="col-lg-4 mb-5 mb-lg-0">
-					<h4 class="text-uppercase mb-4">Location</h4>
-					<p class="lead mb-0">
-						2215 John Daniel Drive <br /> Clark, MO 65243
-					</p>
+					<h4 class="text-uppercase mb-4">Email</h4>
+					<p class="lead mb-0">kj5841@naver.com</p>
 				</div>
 				<!-- Footer Social Icons-->
 				<div class="col-lg-4 mb-5 mb-lg-0">
@@ -332,11 +364,8 @@
 				</div>
 				<!-- Footer About Text-->
 				<div class="col-lg-4">
-					<h4 class="text-uppercase mb-4">About Freelancer</h4>
-					<p class="lead mb-0">
-						Freelance is a free to use, MIT licensed Bootstrap theme created
-						by <a href="http://startbootstrap.com">Start Bootstrap</a> .
-					</p>
+					<h4 class="text-uppercase mb-4">JuYoon</h4>
+					<p class="lead mb-0">포토폴리오 제출용 사이트</p>
 				</div>
 			</div>
 		</div>
@@ -344,7 +373,7 @@
 	<!-- Copyright Section-->
 	<div class="copyright py-4 text-center text-white">
 		<div class="container">
-			<small>Copyright &copy; Your Website 2023</small>
+			<small>Ju Yoon Website 2023</small>
 		</div>
 	</div>
 	<!-- Portfolio Modals-->
@@ -377,7 +406,8 @@
 									src="resources/img/portfolio/BoardList.png" alt="..." />
 								<!-- Portfolio Modal - Text-->
 								<p class="mb-4">게시판 프로젝트입니다.</p>
-								<a href="https://github.com/Kim-Ju-Yoon/Myblogfile" class="btn btn-primary"> <i
+								<a href="https://github.com/Kim-Ju-Yoon/Myblogfile"
+									class="btn btn-primary"> <i
 									class="bi bi-file-earmark-minus"></i> 깃 허브 이동하기
 								</a>
 								<button class="btn btn-primary" data-bs-dismiss="modal">
@@ -420,7 +450,8 @@
 									src="resources/img/portfolio/sns.png" alt="..." />
 								<!-- Portfolio Modal - Text-->
 								<p class="mb-4">SNS 로그인 및 회원가입 프로젝트입니다.</p>
-								<a href="https://github.com/Jinny0609/Green-Marsh-tit.git" class="btn btn-primary"> <i
+								<a href="https://github.com/Jinny0609/Green-Marsh-tit.git"
+									class="btn btn-primary"> <i
 									class="bi bi-file-earmark-minus"></i> 깃 허브 이동하기
 								</a>
 								<button class="btn btn-primary" data-bs-dismiss="modal">
@@ -463,7 +494,8 @@
 									src="resources/img/portfolio/beat.png" alt="..." />
 								<!-- Portfolio Modal - Text-->
 								<p class="mb-4">라즈베리파이를 이용한 실시간 대시보드 프로젝트입니다.</p>
-								<a href="https://github.com/Jinny0609/heartbeat.git" class="btn btn-primary"> <i
+								<a href="https://github.com/Jinny0609/heartbeat.git"
+									class="btn btn-primary"> <i
 									class="bi bi-file-earmark-minus"></i> 깃 허브 이동하기
 								</a>
 								<button class="btn btn-primary" data-bs-dismiss="modal">
